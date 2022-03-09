@@ -1,0 +1,36 @@
+programa
+{
+	
+	funcao inicio()
+	{
+
+	inteiro sequencia[30]
+
+	inteiro numspares[5]
+	inteiro variaPar = 0
+	inteiro variaImpar = 0
+		para(inteiro i=0; i < 5; i++){
+			escreva("Digite um número PAR: ")
+			leia(numspares[i])
+			enquanto(numspares[i] % 2 != 0){
+				escreva("Este não é um número PAR! Digite novamente outro número par: ")
+				leia(numspares[i])
+			}
+
+		}inteiro numsImpares[5]
+		
+		para(inteiro j=0; j < 5; j++){
+			escreva("Digite um número ÍMPAR: ")
+			leia(numsImpares[j])
+			enquanto(numsImpares[j] % 2 == 0){
+				escreva("Este não é um número ÍMPAR! Digite novamente outro número ímpar: ")
+				leia(numsImpares[j])
+			}}
+		para(inteiro i=0; i < 5; i++){
+			sequencia[i] = numspares[i]
+			sequencia[i+1] = numsImpares[i]
+			escreva(sequencia[i]," - ",sequencia[i+1]," - ")
+			
+	}
+}
+}
