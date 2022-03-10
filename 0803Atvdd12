@@ -1,0 +1,25 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		cadeia dia[31] = {"O monarca","A piranha","O padrasto","O famoso","A prostituta","O cosplayer","O nerd","A princesa","O morto","O cafetão","O programador","O cineasta","O professor","O fantasma","O estudante","A mulher","O poderoso","A famosa","A gigante","O monstro","A dona","O mecânico","o cirurgião","O antigo","A Surfista","O herói","A esteticista","O maluco","A Magnifica","O estiloso","O irritante"}
+
+		cadeia mes[12]={"comedor(a)","matador(a)","aconselhador(a)","fazedor(a)","morador(a)","ladra(o)","consumidor(a)","limpador(a)","assistente","amansador(a)","amante","batedor(a)"}
+	
+	     cadeia ano[10]={"de baratas","de idosas","de prostitutas","de jogadores de futebol","de esquizofrênicos","de masoquistas","de fuscas","de abortos","de desenhos animados","de cabeludos"}
+
+		escreva("QUAL É O NOME DO FILME DA SUA VIDA \n\n")
+
+		inteiro respDia, respMes, respAno
+
+		escreva("Digite o dia do seu nascimento: ")
+		leia(respDia)
+		escreva("Digite o mês do seu nascimento: ")
+		leia(respMes)
+		escreva("Digite o último digito do ano do seu nascimento: ")
+		leia(respAno)
+
+		escreva(dia[respDia]," ",mes[respMes]," ",ano[respAno])
+	}
+}
