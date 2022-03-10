@@ -1,0 +1,21 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		cadeia nomes[3][3] = {
+			{"Wallace","William","Wanda"},
+			{"Wilson","Willy","Wally"},
+			{"Valdo","Wallan","Volley"}
+		}
+		para(inteiro i=0; i < 3; i++){
+			
+			para(inteiro j=0; j < 3; j++){
+			se(nomes[j][i] == "Wally"){
+				escreva("WALLY está na coluna ",j+1," linha ",i+1)
+			}
+			
+			}
+		}
+	}
+}
