@@ -1,0 +1,32 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro num[3][5]
+
+
+	para(inteiro i=0; i < 3; i++){
+			
+			para(inteiro j=0; j < 5; j++){
+			escreva("Digite o ",j+1,"° valor da ",i+1,"° coluna: ")
+			leia(num[i][j])
+			
+			}
+		} limpa()
+
+		
+		
+		para(inteiro i=0; i < 3; i++){
+			
+			para(inteiro j=0; j < 5; j++){
+			se(num[i][j] % 2 == 0){
+				escreva("O numero ",num[i][j]," da linha ", j+1," coluna ", i+1," é PAR\n")
+			}senao{
+				escreva("O numero ",num[i][j]," da linha ", j+1," coluna ", i+1," é ÍMPAR\n")
+			}
+			
+			}escreva("\n\n")
+		}
+	}
+}
