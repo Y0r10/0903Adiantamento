@@ -1,0 +1,19 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro num[3][5] = {
+			{1,3,5,7,9},
+			{11,13,15,17,19},
+			{21,23,25,27,29}
+		}
+		para(inteiro i=0; i < 3; i++){
+			
+			para(inteiro j=0; j < 5; j++){
+			escreva(num[i][j]," - ")
+			
+			}
+		}//Eu coloquei dois números a mais para entender qual dos números representava colunas e qual representava linhas
+	}
+}
