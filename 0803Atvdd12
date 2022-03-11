@@ -9,17 +9,20 @@ programa
 	
 	     cadeia ano[10]={"de baratas","de idosas","de prostitutas","de jogadores de futebol","de esquizofrênicos","de masoquistas","de fuscas","de abortos","de desenhos animados","de cabeludos"}
 
-		escreva("QUAL É O NOME DO FILME DA SUA VIDA \n\n")
+		escreva("========QUAL É O NOME DO FILME DA SUA VIDA======== \n\n")
 
 		inteiro respDia, respMes, respAno
+		
 
-		escreva("Digite o dia do seu nascimento: ")
+
+          //USE O "ENQUANTO" PARA ESCAPAR DE PROBLEMAS 
+		escreva("Digite o DIA do seu nascimento: ","\n")
 		leia(respDia)
-		escreva("Digite o mês do seu nascimento: ")
+		escreva("Digite o MÊS do seu nascimento: ","\n")
 		leia(respMes)
-		escreva("Digite o último digito do ano do seu nascimento: ")
+		escreva("Digite o ÚLTIMO digito do ANO do seu nascimento: ","\n")
 		leia(respAno)
 
-		escreva(dia[respDia]," ",mes[respMes]," ",ano[respAno])
+		escreva("\n\n",dia[respDia-1]," ",mes[respMes-1]," ",ano[respAno-1],"\n\n")
 	}
 }
