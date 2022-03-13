@@ -15,14 +15,31 @@ programa
 		
 
 
-          //USE O "ENQUANTO" PARA ESCAPAR DE PROBLEMAS 
+          
 		escreva("Digite o DIA do seu nascimento: ","\n")
 		leia(respDia)
+
+enquanto(respDia>31 ou respDia<1){
+escreva("Data inválida. Tente novamente: ")
+leia(respDia)}
+
 		escreva("Digite o MÊS do seu nascimento: ","\n")
 		leia(respMes)
+
+enquanto(respMes>12 ou respMes<1){
+escreva("Mês inválido. Tente novamente: ")
+leia(respMes)}
+
 		escreva("Digite o ÚLTIMO digito do ANO do seu nascimento: ","\n")
 		leia(respAno)
 
-		escreva("\n\n",dia[respDia-1]," ",mes[respMes-1]," ",ano[respAno-1],"\n\n")
+enquanto(respAno>9 ou respAno<0){
+escreva("Ano inválido. Escreva ÚLTIMO DÍGITO DO ANO DE MASCIMENTO! Tente novamente: ")
+leia(respAno)}
+
+		//USE "SE" PARA ANO BISSEXTO
+
+
+escreva("\n\n",dia[respDia-1]," ",mes[respMes-1]," ",ano[respAno-1],"\n\n")
 	}
 }
