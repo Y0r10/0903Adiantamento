@@ -1,0 +1,79 @@
+programa
+{
+  
+	
+	funcao inicio()
+	{
+		cadeia convidados[100]
+		inteiro opcao = 0
+
+		enquanto(opcao!=4){
+
+
+		escreva("\n\n\n========MENU========\n")
+		escreva("[1] Cadastrar pessoa \n[2]Listar Pessoa\n[3]Remover Pessoa\n[4]Sair\n====================\n")
+		escreva("Opção: ")
+		leia(opcao)
+
+		enquanto(opcao>4 ou opcao<1){
+			escreva("Opção inválida. Tente Novamente: ")
+			leia(opcao)}
+
+			se(opcao==1){
+			cadeia convidado
+			escreva("Escreva seu nome completo: ")
+			leia(convidado)
+				para(inteiro i=0; i < 100; i++){
+				    se(convidados[i]==""){
+				    convidados[i] = convidado
+				    pare}
+				
+
+			
+			para(inteiro j=0; j < 100; j++){
+				se(convidado == convidados[j]){
+					escreva("\nEste nome já está cadastrado. Tente novamente: ")
+					leia(convidado)
+					pare
+				}
+			}
+
+		}
+		escreva("Você foi cadastrado na lista com sucesso. Parabens :)\n\n\n")}
+
+		
+		
+		cadeia procura
+
+		
+		se(opcao==2){
+			inteiro adicao = 0
+			para(inteiro i=0; i < 100; i++){
+				se (convidados[i]!=""){
+					escreva("O convidado ",convidados[i]," é o ",i+1,"° integrante da lista!\n")
+			}
+		}		
+	}
+			
+		cadeia remocao
+		inteiro resposta
+		
+		se(opcao == 3){
+			escreva("Escreva o nome completo da pessoa que deseja remover: ")
+			leia (remocao)
+			para(inteiro j=0; j < 100; j++){
+				se(convidados[j] == remocao){
+					escreva("O convidado ",remocao," é o ",j+1,"° convidado da lista.\n[1]Não [2]Sim\nDeseja Mesmo excluir o convidado da lista? ")
+					leia(resposta)
+					se (resposta == 1){
+						escreva("A lista permanece a mesma!\n\n\n")
+					}senao{
+						convidados[j] = ""
+						escreva("O ",j,"° convidado foi excluído da lista com sucesso.\n\n\n")
+					}
+		           }
+	           }
+		}
+	}
+}
+}
