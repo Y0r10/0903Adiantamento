@@ -16,21 +16,21 @@ programa
 
 
           
-		escreva("Digite o DIA do seu nascimento: ","\n")
+		escreva("Digite o DIA do seu nascimento: ")
 		leia(respDia)
 
           enquanto(respDia>31 ou respDia<1){
           escreva("Data inválida. Tente novamente: ")
           leia(respDia)}
 
-		escreva("Digite o MÊS do seu nascimento: ","\n")
+		escreva("Digite o MÊS do seu nascimento: ")
 		leia(respMes)
 
           enquanto(respMes>12 ou respMes<1){
           escreva("Mês inválido. Tente novamente: ")
           leia(respMes)}
 
-		escreva("Digite o ÚLTIMO digito do ANO do seu nascimento: ","\n")
+		escreva("Digite o ÚLTIMO digito do ANO do seu nascimento: ")
 		leia(respAno)
 
           enquanto(respAno>9 ou respAno<0){
@@ -53,6 +53,6 @@ programa
 		leia(respMes)}
 
 
-          escreva("\n\n",dia[respDia-1]," ",mes[respMes-1]," ",ano[respAno-1],"\n\n")
+          escreva("\n\n",dia[respDia-1]," ",mes[respMes-1]," ",ano[respAno],"\n\n")
 	}
 }
